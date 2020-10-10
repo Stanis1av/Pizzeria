@@ -7,8 +7,8 @@ get '/' do
   erb :index
 end
 
-get '/page1' do
-  erb :page1
+get '/about' do
+  erb :about
 end
 
 get '/page2' do
