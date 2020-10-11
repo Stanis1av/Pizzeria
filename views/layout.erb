@@ -16,26 +16,27 @@
 
     <script src="/app.js"></script>
 
-    <title>Sinatra + Bootstrap</title>
+    <title>Pizzeriap</title>
   </head>
   <body>
-  <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/">Sinatra-Bootstrap</a>
+  <!-- <div class="navbar"> -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Pizzeria</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="/about">About</a>
+        <a class="nav-link" href="/menu">Меню</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/page2">Page 2</a>
+        <a class="nav-link" href="/about">О нас</a>
       </li>
     </ul>
   </div>
 </nav>
+</br>
       <!-- Validation -->
       <div class="container">
         <%if @error && @error.size > 0 then %>
@@ -44,7 +45,7 @@
         <% end %>
         <%= yield %>
       </div>
-    </div>
+    <!-- </div> -->
 
   </body>
 </html>
