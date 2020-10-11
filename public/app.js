@@ -1,10 +1,10 @@
 function something()
   {
-    var x = window.localStorage.getItem('vvv');
+    var x = window.localStorage.getItem('vvv'); // x = hh['vvv']
 
-    x = x * 1 + 1
+    x = x * 1 + 1; // x = x + 1
 
-    window.localStorage.setItem('vvv', x);
+    window.localStorage.setItem('vvv', x); // hh['vvv'] = x
 
     alert(x);
   }

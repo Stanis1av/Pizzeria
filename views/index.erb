@@ -2,5 +2,9 @@
   <br/>
   <h1>Welcome to Pizzeria</h1>
 </div>
+<% @products.each do |p| %>
+  <p><%= p.title %></p>
+<% end %>
+
 <button class="btn btn-primary" onclick="something()">Click me!</button>
 
