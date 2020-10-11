@@ -2,9 +2,34 @@
   <br/>
   <h1>Welcome to Pizzeria</h1>
 </div>
-<% @products.each do |p| %>
-  <p><%= p.title %></p>
-<% end %>
 
+<div class="row">
+<% @products.each do |p| %>
+
+  <div class="col-sm-3 col-lg-3 col-md-3">
+    <div class="">
+      <p class="text-center"><b><%= p.title %></b></p>
+    </div>
+
+    <div class="">
+      <img src="<%= p.path_to_image %>" class="img-thumbnail">
+    </div>
+
+    <div class="">
+      <p>Description: <%= p.description %></p>
+    </div>
+
+    <div class="">
+      <p>Size: <%= p.size %> sm.</p>
+    </div>
+
+    <div class="">
+      <p>Price: <%= p.price %> rub.</p>
+    </div>
+
+  </div>
+
+<% end %>
+</div>
 <button class="btn btn-primary" onclick="something()">Click me!</button>
 
