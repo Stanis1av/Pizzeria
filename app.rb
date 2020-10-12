@@ -25,6 +25,14 @@ get '/page2' do
   erb :page2
 end
 
+get '/cart' do
+  erb :cart
+end
+
+post '/cart' do
+  erb :cart
+end
+
 post '/' do
   erb :index
 end
