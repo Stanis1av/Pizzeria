@@ -33,6 +33,12 @@ function something()
 
   }
 
+  function show_to_cart()
+  {
+    var orders = cart_get_orders();
+    $('#orders_table').val(orders);
+  }
+
   function cart_get_number_of_item()
   {
     var cnt = 0;
