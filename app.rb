@@ -57,3 +57,6 @@ def parse_orders_input (orders_input)
 
   return arr
 end
+
+# check git
+# to termux
