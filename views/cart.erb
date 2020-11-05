@@ -26,6 +26,23 @@
       <td>Total qty: <%= total_qty %></td>
     </tr>
   </tbody>
+  <br/>
+
 </table>
 
+  <form action="/contacts" method="POST">
 
+  	<input type="hidden" name="order[orders_input]" value="<%= @orders_input %>">
+
+	<div class="form-group">
+	    <label>Name</label>
+	    <input name="order[name]" type="email" class="form-control" placeholder="Enter your name">
+	    <label>Phone</label>
+	    <input name="order[phone]" type="email" class="form-control" placeholder="Enter your phone">
+	    <label>Address</label>
+	    <input name="order[address]" type="email" class="form-control" placeholder="Enter your address">
+	     
+  </div>
+
+  <button type="submit" class="btn btn-success">Place this order</button>
+</form>
