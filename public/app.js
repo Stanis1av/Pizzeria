@@ -68,4 +68,9 @@ function something()
     }
     return orders;
   }
-
+// not work
+// function cancel_order() 
+// {
+//   alert('Your cart is empty');
+//   return false;
+// }
