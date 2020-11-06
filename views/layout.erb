@@ -55,7 +55,7 @@
 </br>
       <!-- Validation -->
       <div class="container">
-        <%if @error && @error.size > 0 then %>
+        <%if @error && @error.length > 0 then %>
             </br>
             <div class="alert alert-danger" role="alert"><%= @error %></div>
         <% end %>

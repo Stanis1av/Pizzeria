@@ -24,9 +24,17 @@ get '/about' do
   erb :about
 end
 
-post 'place_order' do
-  @order = Order.create params[:order]
-  erb "Thank you! Your order has been placed."
+post '/place_order' do
+  @order = Order.new params[:order]
+
+  if @order.save
+    erb :order_placed
+    # erb "<h2>Thank you!</h2><br/>Your order has been placed."
+  else
+    @error = @order.errors.full_messages.first
+    erb "Error"
+  end
+
 end
 
 post '/cart' do
